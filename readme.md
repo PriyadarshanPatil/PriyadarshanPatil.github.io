@@ -1,1 +1,1 @@
-"Condepreneur.in main website source code."
+"Priyadarshanpatil.github.io main website source code."
