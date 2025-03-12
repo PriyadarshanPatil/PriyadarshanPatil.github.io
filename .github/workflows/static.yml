@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: './dist'  # Ensure this points to the correct build output
+          path: '.'  # Ensure this points to the correct build output
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
