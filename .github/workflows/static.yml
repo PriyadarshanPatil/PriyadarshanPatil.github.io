@@ -28,10 +28,10 @@ jobs:
       - name: Build Static Files
         run: npm install && npm run build  # Modify based on your build step
       - name: Upload artifact
-        uses: github.com/actions/upload-artifact@v2
+        uses: github.com/actions/upload-artifact@v3
         with:
           name: github-pages
-          path: '.'  # Ensure this points to the correct build output
+          path: '.' 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
