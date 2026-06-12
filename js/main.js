@@ -31,16 +31,48 @@
   // Lightbox
   var lightbox = document.querySelector(".lightbox");
   var lightboxImg = lightbox ? lightbox.querySelector("img") : null;
+  var lightboxPrev = lightbox ? lightbox.querySelector(".lightbox-prev") : null;
+  var lightboxNext = lightbox ? lightbox.querySelector(".lightbox-next") : null;
+  var currentGroup = [];
+  var currentIndex = 0;
+
+  function showPhoto(index) {
+    if (index < 0) index = currentGroup.length - 1;
+    if (index >= currentGroup.length) index = 0;
+    currentIndex = index;
+    lightboxImg.src = currentGroup[currentIndex].src;
+    lightboxImg.alt = currentGroup[currentIndex].alt;
+  }
 
   if (lightbox && lightboxImg) {
     document.querySelectorAll(".gallery-item img").forEach(function (img) {
       img.addEventListener("click", function () {
+        var dest = this.closest(".destination");
+        currentGroup = dest
+          ? Array.from(dest.querySelectorAll(".gallery-item img"))
+          : [this];
+        currentIndex = currentGroup.indexOf(this);
+        if (currentIndex === -1) currentIndex = 0;
         lightboxImg.src = this.src;
         lightboxImg.alt = this.alt;
         lightbox.classList.add("active");
         document.body.style.overflow = "hidden";
       });
     });
+
+    if (lightboxPrev) {
+      lightboxPrev.addEventListener("click", function (e) {
+        e.stopPropagation();
+        showPhoto(currentIndex - 1);
+      });
+    }
+
+    if (lightboxNext) {
+      lightboxNext.addEventListener("click", function (e) {
+        e.stopPropagation();
+        showPhoto(currentIndex + 1);
+      });
+    }
 
     lightbox.addEventListener("click", function (e) {
       if (
@@ -52,15 +84,17 @@
     });
 
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && lightbox.classList.contains("active")) {
-        closeLightbox();
-      }
+      if (!lightbox.classList.contains("active")) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") showPhoto(currentIndex - 1);
+      if (e.key === "ArrowRight") showPhoto(currentIndex + 1);
     });
 
     function closeLightbox() {
       lightbox.classList.remove("active");
       document.body.style.overflow = "";
       lightboxImg.src = "";
+      currentGroup = [];
     }
   }
   // Travel TOC collapsible regions
