@@ -85,10 +85,6 @@
         this.classList.add("active");
       }
 
-      var target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
     });
   });
 
