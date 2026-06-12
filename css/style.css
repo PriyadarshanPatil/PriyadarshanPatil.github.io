@@ -15,8 +15,9 @@
   --color-tag-bg: #f1f5f9;
   --color-tag-text: #475569;
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: ui-monospace, 'SF Mono', 'Fira Code', monospace;
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Fira Code", monospace;
 
   --max-width: 1100px;
   --content-width: 740px;
@@ -44,7 +45,9 @@
   --color-tag-text: #cbd5e1;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -61,7 +64,9 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background: var(--color-bg);
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -81,17 +86,30 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--color-heading);
   line-height: 1.3;
   font-weight: 700;
 }
 
-h1 { font-size: clamp(2rem, 4vw, 3rem); }
-h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem; }
-h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); margin-bottom: 0.5rem; }
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  margin-bottom: 0.5rem;
+}
 
-p { margin-bottom: 1rem; }
+p {
+  margin-bottom: 1rem;
+}
 
 .container {
   max-width: var(--max-width);
@@ -114,7 +132,9 @@ p { margin-bottom: 1rem; }
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-nav-border);
   height: var(--nav-height);
-  transition: background var(--transition), border-color var(--transition);
+  transition:
+    background var(--transition),
+    border-color var(--transition);
 }
 
 .nav-inner {
@@ -170,7 +190,9 @@ p { margin-bottom: 1rem; }
   height: 2px;
   background: var(--color-heading);
   border-radius: 2px;
-  transition: transform var(--transition), opacity var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
 }
 
 .theme-toggle {
@@ -183,7 +205,10 @@ p { margin-bottom: 1rem; }
   align-items: center;
   justify-content: center;
   color: var(--color-text-muted);
-  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    background var(--transition);
   width: 36px;
   height: 36px;
 }
@@ -198,9 +223,15 @@ p { margin-bottom: 1rem; }
   height: 18px;
 }
 
-.theme-toggle .icon-moon { display: none; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-moon {
+  display: none;
+}
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
+}
 
 /* ---- Hero ---- */
 
@@ -261,7 +292,9 @@ p { margin-bottom: 1rem; }
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text);
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
 
 .contact-link:hover {
@@ -302,7 +335,10 @@ p { margin-bottom: 1rem; }
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
 }
 
 .card:hover {
@@ -371,7 +407,9 @@ p { margin-bottom: 1rem; }
   background: var(--color-tag-bg);
   color: var(--color-tag-text);
   border-radius: 99px;
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
 /* ---- Education grid ---- */
@@ -496,7 +534,9 @@ p { margin-bottom: 1rem; }
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
   padding: 0.75rem 0;
-  transition: background var(--transition), border-color var(--transition);
+  transition:
+    background var(--transition),
+    border-color var(--transition);
 }
 
 .toc-regions {
@@ -515,7 +555,9 @@ p { margin-bottom: 1rem; }
   color: var(--color-heading);
   background: var(--color-tag-bg);
   cursor: pointer;
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
 .travel-toc a.toc-region:hover,
@@ -545,7 +587,10 @@ p { margin-bottom: 1rem; }
   color: var(--color-text-muted);
   background: transparent;
   border: 1px solid var(--color-border);
-  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition);
 }
 
 .travel-toc a.toc-dest:hover {
@@ -674,7 +719,11 @@ p { margin-bottom: 1rem; }
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px var(--color-card-shadow);
-  transition: background var(--transition), color var(--transition), border-color var(--transition), opacity var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    opacity var(--transition);
 }
 
 .back-to-top.visible {
@@ -718,7 +767,9 @@ p { margin-bottom: 1rem; }
   object-fit: contain;
   opacity: 0.5;
   filter: grayscale(100%);
-  transition: opacity var(--transition), filter var(--transition);
+  transition:
+    opacity var(--transition),
+    filter var(--transition);
 }
 
 .logo-img-tall {
@@ -782,7 +833,9 @@ p { margin-bottom: 1rem; }
   text-align: center;
   font-size: 0.85rem;
   color: var(--color-text-muted);
-  transition: background var(--transition), border-color var(--transition);
+  transition:
+    background var(--transition),
+    border-color var(--transition);
 }
 
 .footer-links {
