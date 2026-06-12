@@ -92,6 +92,18 @@
     });
   });
 
+  // Close TOC sub-locations after clicking a destination link
+  document.querySelectorAll(".toc-dest").forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.querySelectorAll(".toc-dests.open").forEach(function (d) {
+        d.classList.remove("open");
+      });
+      document.querySelectorAll(".toc-region.active").forEach(function (r) {
+        r.classList.remove("active");
+      });
+    });
+  });
+
   // Back to top button
   var backToTop = document.querySelector(".back-to-top");
   if (backToTop) {
