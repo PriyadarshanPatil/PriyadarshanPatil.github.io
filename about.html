@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Priyadarshan Patil, Ph.D.</title>
+  <meta name="description" content="About Priyadarshan Patil, Ph.D. — Operations research leader with $320MM+ in infrastructure investment decisions, $500MM in logistics savings at Amazon, and a startup building NLP-to-optimization compilers. VP of Engineering at Electrotempo, co-founder of LogiModel AI.">
+  <meta name="author" content="Priyadarshan Patil">
+  <link rel="canonical" href="https://priyadarshanpatil.github.io/about.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About — Priyadarshan Patil, Ph.D.">
+  <meta property="og:description" content="Operations research leader: $320MM+ infrastructure decisions, $500MM logistics savings at Amazon, NLP-to-optimization startup. VP Engineering at Electrotempo, co-founder LogiModel AI.">
+  <meta property="og:url" content="https://priyadarshanpatil.github.io/about.html">
+  <meta property="og:image" content="https://priyadarshanpatil.github.io/Patil_headshot_2020.JPG">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||'light';
+    document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">Priyadarshan Patil</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <section class="section">
+      <p>
+        Dr. Patil has spent the last decade working on optimization problems in transportation, logistics, and energy infrastructure. He has shipped production MILP solvers at Amazon, built a fleet electrification business from scratch at Electrotempo, and is now building a platform at LogiModel AI that makes mathematical optimization accessible to non-specialists. He holds a Ph.D. in Operations Research from UT Austin and has 470+ citations across network optimization, traffic assignment, and shortest-path algorithms.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="section">
+      <p class="section-label">Experience</p>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>VP of Engineering, Electrotempo Inc.</h3>
+          <span class="card-date">2023 — Present</span>
+        </div>
+        <p class="card-subtitle">Vancouver, BC</p>
+        <div class="card-body">
+          <p>Runs Optimization, AI, and Engineering at Electrotempo. Responsible for the full product lifecycle: formulation, implementation, and B2B delivery to ports, utilities, and fleet operators.</p>
+          <ul>
+            <li>Built and runs the team of scientists and engineers. The team's optimization and forecasting products generated $1.5MM+ ARR in the first year.</li>
+            <li>Developed a fleet electrification optimization engine (MILP + decomposition). Went from prototype to production in five months, $500K ARR at launch.</li>
+            <li>Built a joint site-fleet optimization platform that uses behavioral and scheduling data to minimize total cost of ownership. Cut lifecycle costs 12–31% for Port clients; models supported $320MM in infrastructure investment decisions.</li>
+            <li>Built regional trucking power demand forecasting models using data fusion and regression. Three new utility contracts, $1MM ARR.</li>
+            <li>Led the SOC 2 Type II compliance audit. Set up security policies, access controls, vendor management, and incident response from scratch to clear enterprise procurement.</li>
+            <li>Product lead across all technical initiatives. Takes transportation and energy system constraints and turns them into shipped B2B optimization products.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">MILP</span>
+            <span class="tag">Decomposition</span>
+            <span class="tag">Forecasting</span>
+            <span class="tag">B2B Enterprise</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">SOC 2</span>
+            <span class="tag">Product Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Co-founder &amp; Technical Lead, LogiModel AI</h3>
+          <span class="card-date">2024 — Present</span>
+        </div>
+        <p class="card-subtitle">Vancouver, BC</p>
+        <div class="card-body">
+          <p>Building an AI-powered supply chain optimization platform. Operations teams describe their problem in plain English; the platform formulates and solves the MILP. No OR consultant required.</p>
+          <ul>
+            <li>Built a natural-language-to-optimization compiler: a deterministic pipeline that parses LaTeX formulations into solvable MILP code. 83%+ accuracy on the NLP4LP benchmark.</li>
+            <li>Wrote 23+ compiler subsystems covering parsing, semantic analysis, normalization, code emission, and programmatic constraint-sign validation. Replaced LLM-based validation with deterministic correctness checks.</li>
+            <li>Built the full production stack: PostgreSQL (5-schema layout, Alembic migrations), RBAC auth (JWT, 4 roles, 16 permissions), Docker/CI, and a Compiler API with MCP support for AI-agent integration.</li>
+            <li>Built a simulation scenario builder that prepares sensitivity analyses from solved models and uploaded datasets.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">NLP</span>
+            <span class="tag">Compiler Design</span>
+            <span class="tag">MILP</span>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">API Design</span>
+            <span class="tag">Startup</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Applied Scientist, Amazon Inc.</h3>
+          <span class="card-date">2022 — 2023</span>
+        </div>
+        <p class="card-subtitle">Seattle, WA</p>
+        <div class="card-body">
+          <ul>
+            <li>Built a MILP model that automated short-term flow and carrier allocation across Amazon's US supply chain. Cut staffing costs 1.2% and dropped plan WAPE from 5% to 3.3%.</li>
+            <li>The model enforces third-party carrier contracts and glide paths for peak event days. Reduced annual contract violation penalties by $500MM.</li>
+            <li>Improved last-mile delivery topology optimization with predictive regression. Travel-time WAPE went from 16% to 11%.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Supply Chain</span>
+            <span class="tag">MILP</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Last-Mile Logistics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Graduate Research &amp; Teaching Assistant, The University of Texas at Austin</h3>
+          <span class="card-date">2015 — 2022</span>
+        </div>
+        <p class="card-subtitle">Austin, TX</p>
+        <div class="card-body">
+          <ul>
+            <li>Improved post-disaster road recovery sequencing using dynamic programming and convex optimization, reducing solution complexity from factorial to exponential.</li>
+            <li>Designed graph algorithms for oversize/overweight vehicle routing for TxDOT, cutting transportation and pavement costs by 23%.</li>
+            <li>Won first prize nationally in the 2019 AWS &amp; INFORMS Computing Cluster Competition with a joint demand forecasting/inventory control model.</li>
+            <li>Developed efficient algorithms for symmetric traffic assignment, reducing solution time by ~50%, later adapting them for rail-road network electrification.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Dynamic Programming</span>
+            <span class="tag">Convex Optimization</span>
+            <span class="tag">Graph Algorithms</span>
+            <span class="tag">Traffic Assignment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <p class="section-label">Education</p>
+      <div class="edu-grid">
+        <div class="card">
+          <h3>Ph.D. in Operations Research</h3>
+          <p class="card-subtitle">The University of Texas at Austin</p>
+          <p class="card-date">2022</p>
+          <p class="card-body" style="margin-top:0.5rem;">Dissertation: Traffic Assignment Models — Applicability and Efficacy<br>Advisor: Dr. Stephen D. Boyles</p>
+        </div>
+        <div class="card">
+          <h3>M.S.E. in Transportation Engineering</h3>
+          <p class="card-subtitle">The University of Texas at Austin</p>
+          <p class="card-date">2016</p>
+          <p class="card-body" style="margin-top:0.5rem;">Thesis: Simulation Evaluation of Emerging Estimation Techniques for Multinomial Probit Models</p>
+        </div>
+        <div class="card">
+          <h3>B.Tech. in Civil Engineering</h3>
+          <p class="card-subtitle">Indian Institute of Technology Madras</p>
+          <p class="card-date">2015</p>
+          <p class="card-body" style="margin-top:0.5rem;">Thesis: Network Algorithms for Sustainability Objectives</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="section">
+      <p class="section-label">Awards</p>
+      <div class="content">
+        <div class="award-item">
+          <p class="award-name">Best Student Paper Award, 2022</p>
+          <p class="award-desc">Texas chapter of ITE International — best student transportation paper in Texas</p>
+        </div>
+        <div class="award-item">
+          <p class="award-name">Professional Development Awards, 2018–2021</p>
+          <p class="award-desc">Four awards from the Graduate School at UT Austin for presentations at INFORMS and TRB annual meetings</p>
+        </div>
+        <div class="award-item">
+          <p class="award-name">Winner, fORged by Machines Competition, 2019</p>
+          <p class="award-desc">Awarded by INFORMS Computing Society and AWS for best demand prediction/inventory control model</p>
+        </div>
+        <div class="award-item">
+          <p class="award-name">Scholarship for Graduate Study in ITS, 2018</p>
+          <p class="award-desc">Intelligent Transportation Society Texas chapter — academic achievements</p>
+        </div>
+        <div class="award-item">
+          <p class="award-name">Ryuichi Kitamura Paper Award, 2017</p>
+          <p class="award-desc">Best paper award for a professor-student pair by Travel Analysis Methods section (ADB00) of the Transportation Research Board</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <p class="section-label">Technical Skills</p>
+      <div class="content">
+        <div style="margin-bottom: 1rem;">
+          <h3>Languages &amp; Libraries</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">R</span>
+            <span class="tag">AMPL</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">SciPy</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <h3>Optimization &amp; Tools</h3>
+          <div class="tags">
+            <span class="tag">Gurobi</span>
+            <span class="tag">CPLEX</span>
+            <span class="tag">Xpress</span>
+            <span class="tag">PuLP</span>
+            <span class="tag">SimPy</span>
+            <span class="tag">ArcGIS</span>
+            <span class="tag">QGIS</span>
+            <span class="tag">TransCAD</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <h3>Infrastructure &amp; Enterprise</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">RBAC / JWT Auth</span>
+            <span class="tag">REST API Design</span>
+            <span class="tag">MCP Protocol</span>
+            <span class="tag">SOC 2 Compliance</span>
+            <span class="tag">Alembic Migrations</span>
+          </div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <h3>Leadership</h3>
+          <div class="tags">
+            <span class="tag">Team Management (8+)</span>
+            <span class="tag">B2B Enterprise Sales</span>
+            <span class="tag">Product Strategy</span>
+            <span class="tag">Security &amp; Compliance</span>
+            <span class="tag">Client Delivery</span>
+            <span class="tag">Startup Fundraising</span>
+          </div>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <div class="tags">
+            <span class="tag">AWS Cloud Practitioner (CLF-001)</span>
+            <span class="tag">Engineering Education Certificate, UT Austin</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="section">
+      <p class="section-label">Research Service</p>
+      <div class="content">
+        <div class="card">
+          <h3>Professional Appointments &amp; Reviewing</h3>
+          <div class="card-body">
+            <ul>
+              <li>Member and Communications Coordinator, TRB Standing Committee on Railroad Operating Technologies (2021–2025)</li>
+              <li>Grant referee for NSF, National Academy of Sciences ACRP ($400K) and NCHRP ($350K) programs, and Amazon Research Awards ($80K)</li>
+              <li>Guest Editor, Modern Transportation journal</li>
+              <li>Paper referee for 120+ reviews across Transportation Research Parts B/C/E, Transportmetrica A, Networks and Spatial Economics, Transportation Research Record, TRB Annual Meeting, ASEE, and others</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="mailto:priyadarshanpatil17@gmail.com" class="contact-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/priyadarshan17/" target="_blank" rel="noopener" class="contact-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.47 2H3.53A1.45 1.45 0 002 3.47v17.06A1.45 1.45 0 003.47 22h17.06A1.45 1.45 0 0022 20.53V3.47A1.45 1.45 0 0020.47 2zM8.09 18.74h-3v-9h3v9zM6.59 8.48a1.56 1.56 0 110-3.12 1.56 1.56 0 010 3.12zM18.91 18.74h-3v-4.26c0-1.14-.02-2.6-1.59-2.6-1.59 0-1.83 1.24-1.83 2.52v4.34h-3v-9h2.88v1.23h.04a3.16 3.16 0 012.85-1.56c3.05 0 3.61 2 3.61 4.61v4.72z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://scholar.google.com/citations?user=pcW8PWMAAAAJ" target="_blank" rel="noopener" class="contact-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.42A12 12 0 0112 21a12 12 0 01-6.16-10.42L12 14z"/></svg>
+        Scholar
+      </a>
+      <a href="Priyadarshan_Patil_CV.pdf" target="_blank" class="contact-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 21h10a2 2 0 002-2V9l-5-5H7a2 2 0 00-2 2v13a2 2 0 002 2z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        CV
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Priyadarshan Patil</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
