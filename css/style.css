@@ -2,7 +2,7 @@
   --color-bg: #ffffff;
   --color-bg-alt: #f8f9fa;
   --color-text: #1a1a2e;
-  --color-text-muted: #64748b;
+  --color-text-muted: #526077;
   --color-heading: #0f0f23;
   --color-accent: #2563eb;
   --color-accent-hover: #1d4ed8;
@@ -78,12 +78,22 @@ img {
 
 a {
   color: var(--color-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
   transition: color var(--transition);
 }
 
 a:hover {
   color: var(--color-accent-hover);
+}
+
+.nav-links a,
+.nav-brand,
+.contact-link,
+.toc-region,
+.toc-dest {
+  text-decoration: none;
 }
 
 h1,
