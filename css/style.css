@@ -274,13 +274,16 @@ p {
   margin-bottom: 0;
 }
 
+.hero picture {
+  justify-self: center;
+}
+
 .hero-photo {
   width: 220px;
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-border);
-  justify-self: center;
 }
 
 /* ---- Contact Bar ---- */
@@ -812,11 +815,11 @@ p {
 }
 
 [data-theme="dark"] .logo-img {
-  filter: grayscale(100%) invert(1);
+  filter: grayscale(100%);
 }
 
 [data-theme="dark"] .logo-img:hover {
-  filter: grayscale(0%) invert(1);
+  filter: grayscale(0%);
 }
 
 @media (max-width: 639px) {
@@ -884,10 +887,13 @@ p {
     padding: 4rem 0 2rem;
   }
 
+  .hero picture {
+    justify-self: end;
+  }
+
   .hero-photo {
     width: 260px;
     height: 260px;
-    justify-self: end;
   }
 }
 
