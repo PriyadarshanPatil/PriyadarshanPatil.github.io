@@ -836,26 +836,6 @@ p {
   filter: grayscale(0%);
 }
 
-.logo-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  opacity: 0.55;
-  transition: opacity var(--transition);
-}
-
-.logo-item:hover {
-  opacity: 0.85;
-}
-
-.logo-icon {
-  height: 22px;
-  width: 22px;
-}
-
 [data-theme="dark"] .logo-img {
   filter: grayscale(100%);
 }
@@ -873,9 +853,6 @@ p {
   }
   .logo-img-tall {
     height: 40px;
-  }
-  .logo-item {
-    font-size: 0.9rem;
   }
 }
 
