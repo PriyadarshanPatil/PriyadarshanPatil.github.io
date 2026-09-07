@@ -276,6 +276,7 @@ p {
 
 .hero picture {
   justify-self: center;
+  order: -1;
 }
 
 .hero-photo {
@@ -908,6 +909,7 @@ p {
 
   .hero picture {
     justify-self: end;
+    order: 0;
   }
 
   .hero-photo {
@@ -975,7 +977,6 @@ p {
   }
 
   .hero-photo {
-    order: -1;
     width: 180px;
     height: 180px;
   }
